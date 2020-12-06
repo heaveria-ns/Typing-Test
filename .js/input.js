@@ -13,6 +13,10 @@ input.addEventListener("input", function () {
 
     updateChar();
     updateText();
+    errorMath();
+    wpm();
+    cpm();
+    accuracy();
 });
 
 // Updates typedChar based on on Input
@@ -66,3 +70,5 @@ function updateText() {
         }
     }
 }
+
+console.log("input.js loaded");

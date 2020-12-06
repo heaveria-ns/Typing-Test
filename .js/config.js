@@ -6,7 +6,7 @@ var startButton = document.getElementById('startButton');
 var input = document.getElementById("input");
 var accuracy = document.getElementById("accuracy");
 var time = document.getElementById("timeOutput");
-var errorsOutput = document.getElementById("errorOutput");
+var errorOutput = document.getElementById("errorOutput");
 var text = document.getElementById("textOutput");
 var started = false; // Security measure
 
@@ -30,6 +30,7 @@ createText();
 // Button to Start Test
 startButton.addEventListener("click", function() {
     startTest();
+    time();
 });
 
 /* ------FUNCTIONS---------- */
@@ -74,3 +75,5 @@ function disableTest() {
 
 /* Use this to get how many elements have class "text" is the parent div
 text.getElementsByClassName("correct_char").length; */
+
+console.log("config.js loaded");
