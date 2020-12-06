@@ -10,7 +10,8 @@ Folder | Name | Purpose
 /.js/ | math.js | Calculations based on input.
 /.js/ | texts.js | Contains an array of all texts.
 /css/ | body.css | Setups content for entire site.
-/css/ | form.css | Formats content within `class="content"`.
+/css/ | form.css | Formats content within `class="content"` (in HTML files).
+/uploads/ | favicon.ico | Favicon for webpage. Linked in HTML headers.
 
 
 Date: 06.12.2020 
