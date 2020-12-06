@@ -1,0 +1,30 @@
+/* Entire Page */
+body {
+    background-color: #2b2a2a;
+}
+
+/* Title outside of box */
+.pageTitle {
+    font-family: monospace;
+    font: monaco;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Centers and changes color. */
+.box {
+  max-width: 500px;
+  width: auto;
+  min-height: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #4e4e4e;
+  box-shadow: 0 0 10px 10px #505050;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  outline: none;
+}

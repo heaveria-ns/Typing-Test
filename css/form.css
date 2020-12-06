@@ -1,0 +1,69 @@
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.inputTextBox {
+    width: auto;
+    max-width: 500px;
+    height: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0,0,0,.35);
+    resize: none;
+    outline: none;
+
+}
+
+/* The button in the box ^ */
+.startButton {
+    font-family: monospace;
+    font: monaco;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3b81aa;
+    border: none;
+    padding: 5px 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.startButton:disabled {
+    background-color: #2b2a2a;
+    color: #c7c6c6;
+}
+
+.correct_char {
+    color: green;
+}
+
+.incorrect_char {
+    color: white;
+    background-color: red;
+}
+
+.fixed_char {
+    color: yellow;
+}
+
+.normal_char {
+    color: white;
+}
+
+.backspace {
+    color: white;
+}

@@ -1,0 +1,2 @@
+/* This JavaScript file is responsible
+   for all the math from the inputted text. */
