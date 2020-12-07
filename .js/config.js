@@ -4,8 +4,8 @@
 // Creates Easy-to-Use DOM shortcuts for elements on screen.
 var startButton = document.getElementById('startButton');
 var input = document.getElementById("input");
-var accuracy = document.getElementById("accuracy");
-var time = document.getElementById("timeOutput");
+var accuracy = document.getElementById("accuracyOutput");
+var timeOutput = document.getElementById("timeOutput");
 var errorOutput = document.getElementById("errorOutput");
 var text = document.getElementById("textOutput");
 var started = false; // Security measure
@@ -13,14 +13,23 @@ var started = false; // Security measure
 // Variables
 var textChoice = randomNumber(0, 4);
 var string;
+//---Typed Characters---
 var textChar = 0;
 var inputChar = 0;
 var typedChar = 0;
-var inputArray;
-var stringArray;
-var spanArray;
+var wordChar = 0;
+//---Arrays---
+var inputArray; //Each character of input.
+var stringArray; //Each character.
+var spanArray; //Each <span> in text.
+var wordArray; //Each word in text.
 var distance;
 var errors = 0;
+var accuracy;
+//---Time---
+var seconds = 0;
+var minutes = 0;
+var time; 
 
 /* -------------CODE----------- */
 
@@ -30,7 +39,7 @@ createText();
 // Button to Start Test
 startButton.addEventListener("click", function() {
     startTest();
-    time();
+    setInterval(timerMath, 1000);
 });
 
 /* ------FUNCTIONS---------- */
@@ -51,10 +60,8 @@ function createText() {
     textChar = stringArray.length;
     spanArray = text.querySelectorAll('span');
 
-    /* var textLength = spanArray.length - 1;
-    for (var i = textLength; i <= spanArray.length - 1; i--) {
-        spanArray[i].classList.add("normal_char");
-    } */ //TESTING PURPOSES
+    wordArray = texts[textChoice].split(" ");
+    wordChar = wordArray.length;
 } 
 
 // Starts Test
@@ -72,8 +79,5 @@ function disableTest() {
     input.disabled = true;
     input.value = "Locked.\nPossible Reasons:\n- Attempted Cheating\n- Other Error\n(Always use the 'Start' button.)"
 }
-
-/* Use this to get how many elements have class "text" is the parent div
-text.getElementsByClassName("correct_char").length; */
 
 console.log("config.js loaded");

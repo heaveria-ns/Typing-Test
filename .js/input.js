@@ -4,7 +4,7 @@
 
 // On Input (only works after startTest() has run)
 input.addEventListener("input", function () {
-    if (started == false) {
+    if (started === false) {
         disableTest();
     }
 
@@ -14,9 +14,9 @@ input.addEventListener("input", function () {
     updateChar();
     updateText();
     errorMath();
+    accuracyMath();
     wpm();
     cpm();
-    accuracy();
 });
 
 // Updates typedChar based on on Input
