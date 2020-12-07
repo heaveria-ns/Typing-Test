@@ -15,8 +15,16 @@ input.addEventListener("input", function () {
     updateText();
     errorMath();
     accuracyMath();
-    wpm();
-    cpm();
+
+    if ((seconds == 0) && (minutes == 0)) {
+        timerInterval = setInterval(timerMath, 1000);
+    }
+
+    if (inputArray.length == stringArray.length) {
+        clearInterval(timerInterval);
+        disableTest();
+        return;
+    }
 });
 
 // Updates typedChar based on on Input

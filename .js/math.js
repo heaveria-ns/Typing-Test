@@ -8,13 +8,15 @@ function errorMath() {
 }
 
 // Calculates words-per-minute and updates HTML
-function wpm() {
-
+function wpmMath() {
+    inputWords = inputArray.join("");
+    inputWords = inputWords.split(" ").length;
+    wpmOutput.innerHTML = Math.round(inputWords/(totalSeconds * 60));
 }
 
-// Calculates charactera-per-minute and updates HTML
-function cpm() {
-    
+// Calculates characters-per-minute and updates HTML
+function cpmMath() {
+    cpmOutput.innerHTML = Math.round(typedChar/(totalSeconds / 60));
 }
 
 // Calculates accuracy and updates HTML
@@ -27,16 +29,20 @@ function accuracyMath() {
 /* Math to count up since 0:0 (min:sec).
    called in config.js */
 function timerMath() {
-    if(seconds < 60) {
+    if (seconds < 60) {
         seconds++;
+        totalSeconds++;
         time = minutes + ":" + seconds;
         timeOutput.innerHTML = time;
     } else if (seconds >= 60) {
         seconds = 0;
         minutes++;
+        totalSeconds++;
         time = minutes + ":" + seconds;
         timeOutput.innerHTML = time;
-    } else if (minutes >= 60) {
-        
-    } 
+    }
+    cpmMath();
+    wpmMath();
 }
+
+console.log("math.js loaded");

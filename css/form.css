@@ -46,6 +46,47 @@
     background-color: #2b2a2a;
     color: #c7c6c6;
 }
+/*------------*/
+
+/* The Output for Each Stats */
+.boxes {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font: monaco;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.errors {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.wpm {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.cpm {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.accuracy {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.time {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.statsOutput {
+    size: 20px;
+}
+/*------------*/
 
 .correct_char {
     color: green;

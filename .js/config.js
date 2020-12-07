@@ -7,17 +7,21 @@ var input = document.getElementById("input");
 var accuracy = document.getElementById("accuracyOutput");
 var timeOutput = document.getElementById("timeOutput");
 var errorOutput = document.getElementById("errorOutput");
+var cpmOutput = document.getElementById("cpmOutput");
+var wpmOutput = document.getElementById("wpmOutput");
 var text = document.getElementById("textOutput");
 var started = false; // Security measure
 
 // Variables
 var textChoice = randomNumber(0, 4);
 var string;
+var cpm;
 //---Typed Characters---
 var textChar = 0;
 var inputChar = 0;
 var typedChar = 0;
 var wordChar = 0;
+var inputWords = 0;
 //---Arrays---
 var inputArray; //Each character of input.
 var stringArray; //Each character.
@@ -29,7 +33,9 @@ var accuracy;
 //---Time---
 var seconds = 0;
 var minutes = 0;
-var time; 
+var totalSeconds = 0;
+var time;
+var timerInterval; 
 
 /* -------------CODE----------- */
 
@@ -75,9 +81,11 @@ function startTest() {
 
 // Security Measure
 function disableTest() {
-    startButton.disabled = false;
+    startButton.disabled = true;
     input.disabled = true;
+    if (started === false) {
     input.value = "Locked.\nPossible Reasons:\n- Attempted Cheating\n- Other Error\n(Always use the 'Start' button.)"
+    }
 }
 
 console.log("config.js loaded");
