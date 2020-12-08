@@ -1,4 +1,4 @@
-> NOTICE! Still in development.
+> NOTICE! A redesign is in progress.
 
 # Typing Speed Test
 
@@ -15,6 +15,6 @@ Folder | Name | Purpose
 /uploads/ | favicon.ico | Favicon for webpage. Linked in HTML headers.
 
 
-Date: 06.12.2020 
+Date: 08.12.2020 
 (DD/MM/YYYY)
 

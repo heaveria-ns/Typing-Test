@@ -8,10 +8,10 @@ function errorMath() {
 }
 
 // Calculates words-per-minute and updates HTML
-function wpmMath() {
+ function wpmMath() {
     inputWords = inputArray.join("");
-    inputWords = inputWords.split(" ").length;
-    wpmOutput.innerHTML = Math.round(inputWords/(totalSeconds * 60));
+    var numWords = inputWords.split(" ").length;
+    wpmOutput.innerHTML = Math.round(numWords/(totalSeconds / 60)); 
 }
 
 // Calculates characters-per-minute and updates HTML
@@ -40,7 +40,8 @@ function timerMath() {
         totalSeconds++;
         time = minutes + ":" + seconds;
         timeOutput.innerHTML = time;
-    }
+    };
+
     cpmMath();
     wpmMath();
 }

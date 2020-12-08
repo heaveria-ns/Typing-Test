@@ -35,7 +35,7 @@ var seconds = 0;
 var minutes = 0;
 var totalSeconds = 0;
 var time;
-var timerInterval; 
+var timerInterval;
 
 /* -------------CODE----------- */
 
@@ -45,7 +45,6 @@ createText();
 // Button to Start Test
 startButton.addEventListener("click", function() {
     startTest();
-    setInterval(timerMath, 1000);
 });
 
 /* ------FUNCTIONS---------- */
@@ -77,12 +76,14 @@ function startTest() {
     startButton.disabled = true;
     input.disabled = false;
     input.focus();
+    timerInterval = setInterval(timerMath, 1000);
 }
 
 // Security Measure
 function disableTest() {
     startButton.disabled = true;
     input.disabled = true;
+    clearInterval(timerMath);
     if (started === false) {
     input.value = "Locked.\nPossible Reasons:\n- Attempted Cheating\n- Other Error\n(Always use the 'Start' button.)"
     }

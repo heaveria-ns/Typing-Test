@@ -16,10 +16,6 @@ input.addEventListener("input", function () {
     errorMath();
     accuracyMath();
 
-    if ((seconds == 0) && (minutes == 0)) {
-        timerInterval = setInterval(timerMath, 1000);
-    }
-
     if (inputArray.length == stringArray.length) {
         clearInterval(timerInterval);
         disableTest();
