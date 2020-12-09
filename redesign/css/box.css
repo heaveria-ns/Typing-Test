@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.mainBox {
+    background-color: #23272A;
+    box-shadow: 0 0 5px 5px #23272A;
+    padding: 2em;
+}
+
+.inputTextChild {
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    border-radius: 2px;
+    height: 30px;
+    width: 20em;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.13);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    letter-spacing: 2px;
+    
+}
+
+.mainBox .startButton {
+    color: white;
+    background-color: #7289DA;
+
+    font-size: 20px;
+
+    border-radius: 1px;
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+
+    outline: none;
+    border: none;
+}
+
+.mainBox .startButtonParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

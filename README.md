@@ -14,7 +14,17 @@ Folder | Name | Purpose
 /css/ | form.css | Formats content within `class="content"` (in HTML files).
 /uploads/ | favicon.ico | Favicon for webpage. Linked in HTML headers.
 
+## Redesign
+A redesign of the entire website is under progress to modernize it and ensure it works on smaller screens (e.g. mobile phones). I've included those files in this GitHub. The link to view the new design is here: https://keyboard.jl14.repl.co/redesign/index.html
 
-Date: 08.12.2020 
+### Redesign Files:
+Folder | Name | Purpose
+------------ | ------------- | -------------
+/redesign/ | index.html | HTML file for the website.
+/redesign/css/ | body.css | Setups entire page and centers.
+/redesign/css/ | box.js | Overall formatting for content inside .mainBox
+/redesign/css/ | stats.js | Formatting for the stats (e.g. error, CPM, WPM, etc.)
+
+Date: 09.12.2020 
 (DD/MM/YYYY)
 
